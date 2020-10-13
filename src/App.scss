@@ -1,0 +1,285 @@
+/* Nav bar styling */
+
+.nav-bar {
+  background: #000 !important;
+  box-shadow: none !important;
+
+  .logo-div {
+    flex-grow: 1;
+
+    .logo {
+      width: 150px;
+    }
+  }
+
+  .select-lang {
+    .form-control {
+      opacity: 0.3;
+      min-width: 100px;
+      margin: 0 10px;
+    }
+
+    .white,
+    .MuiSvgIcon-root,
+    .PrivateNotchedOutline-root-4 {
+      color: #fff !important;
+      border-color: #fff !important;
+    }
+  }
+
+  .nav-links {
+    .nav-link {
+      text-decoration: none;
+      padding: 0 20px;
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 0.3;
+      letter-spacing: 1px;
+      float: left;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .active {
+    opacity: 1 !important;
+  }
+}
+
+/* Carousel styling */
+
+.carousel-container {
+  width: 100%;
+  height: auto;
+  z-index: -5;
+
+  .thumbs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel {
+    height: 60vh;
+  }
+
+  .slide {
+    background: #fff;
+  }
+}
+
+/* Health Insurance Paragraph styling*/
+
+.carousel-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.health-insurance {
+  margin-top: 200px;
+}
+
+.landing-container {
+  img {
+    width: 400px;
+    padding: 0 100px;
+  }
+
+  .MuiListItemText-primary {
+    font-size: 0.9em;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .subtitle,
+  .list-text {
+    color: grey;
+  }
+
+  .list {
+    margin: 15px 0;
+  }
+
+  .btn {
+    text-transform: initial;
+  }
+
+  .paragraph {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 699px) {
+  .health-insurance {
+    margin-top: 150px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .landing-container {
+    img {
+      width: 200px;
+      padding: 0 50px 50px 50px;
+    }
+
+    .health-paragraph {
+      padding: 0px;
+    }
+
+    .paragraph {
+      padding: 0 50px;
+
+      .title {
+        margin-bottom: 0;
+      }
+
+      .list {
+        margin: 0 0;
+      }
+    }
+
+    .btn {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Investment Plans Paragraph styling*/
+
+.investment-plans {
+  margin: 50px 0 100px 0;
+  padding-left: 100px;
+}
+
+@media (max-width: 699px) {
+  .investment-plans {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+/* About Us Page styling */
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  .about-content {
+    padding: 0 200px;
+  }
+
+  span {
+    font-weight: bold;
+    color: #0080ff;
+  }
+
+  .subtitle {
+    color: grey;
+    margin-top: 15px;
+  }
+
+  .list-item {
+    padding: 0 5px;
+  }
+
+  .bottom {
+    margin: 40px 0 60px 0;
+  }
+
+  .list-title {
+    font-weight: bold;
+
+    .icon {
+      margin-right: 10px;
+      color: #0080ff;
+    }
+  }
+
+  .about-us {
+    text-align: center;
+    padding: 50px 150px;
+  }
+}
+
+@media (max-width: 699px) {
+  .container {
+    .about-us {
+      padding: 50px;
+    }
+
+    .about-content {
+      padding: 0 50px;
+    }
+
+    .list-item {
+      margin: 0 0 20px 0;
+    }
+
+    .bottom {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+/* Contact Us Page styling */
+
+.contact-us {
+  background: url(../src/images/contact-us-background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+
+  .paragraph {
+    padding: 60px;
+  }
+
+  span {
+    font-weight: bold;
+    color: #0080ff;
+  }
+
+  .subtitle {
+    color: grey;
+    margin: 15px 0;
+  }
+
+  .icon {
+    color: grey;
+    padding-top: 20px;
+  }
+
+  .contact-detail {
+    .title {
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: grey;
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+/* Footer styling */
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: gray;
+  padding: 20px 0 20px 0;
+  background-color: gainsboro;
+}
