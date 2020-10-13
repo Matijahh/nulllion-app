@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/nulllion-app/static/css/main.814a4224.chunk.css",
+    "main.js": "/nulllion-app/static/js/main.5c0c507f.chunk.js",
+    "main.js.map": "/nulllion-app/static/js/main.5c0c507f.chunk.js.map",
+    "runtime-main.js": "/nulllion-app/static/js/runtime-main.f8d41d44.js",
+    "runtime-main.js.map": "/nulllion-app/static/js/runtime-main.f8d41d44.js.map",
+    "static/css/2.fb230578.chunk.css": "/nulllion-app/static/css/2.fb230578.chunk.css",
+    "static/js/2.6d71253e.chunk.js": "/nulllion-app/static/js/2.6d71253e.chunk.js",
+    "static/js/2.6d71253e.chunk.js.map": "/nulllion-app/static/js/2.6d71253e.chunk.js.map",
+    "index.html": "/nulllion-app/index.html",
+    "precache-manifest.01a2b28c45658e84f0e3a3a5ce4cc5bf.js": "/nulllion-app/precache-manifest.01a2b28c45658e84f0e3a3a5ce4cc5bf.js",
+    "service-worker.js": "/nulllion-app/service-worker.js",
+    "static/css/2.fb230578.chunk.css.map": "/nulllion-app/static/css/2.fb230578.chunk.css.map",
+    "static/css/main.814a4224.chunk.css.map": "/nulllion-app/static/css/main.814a4224.chunk.css.map",
+    "static/js/2.6d71253e.chunk.js.LICENSE.txt": "/nulllion-app/static/js/2.6d71253e.chunk.js.LICENSE.txt",
+    "static/media/10364.jpg": "/nulllion-app/static/media/10364.a9a110df.jpg",
+    "static/media/195548-OY9OIN-908.jpg": "/nulllion-app/static/media/195548-OY9OIN-908.4898f1f8.jpg",
+    "static/media/25060.jpg": "/nulllion-app/static/media/25060.63790588.jpg",
+    "static/media/31214.jpg": "/nulllion-app/static/media/31214.b0603a5a.jpg",
+    "static/media/OGN39D0.jpg": "/nulllion-app/static/media/OGN39D0.dfc25c7c.jpg",
+    "static/media/App.scss": "/nulllion-app/static/media/contact-us-background.b9d67e41.jpg",
+    "static/media/health-insurance.svg": "/nulllion-app/static/media/health-insurance.e803563c.svg",
+    "static/media/investment-plan.svg": "/nulllion-app/static/media/investment-plan.6c7021e9.svg",
+    "static/media/logo.png": "/nulllion-app/static/media/logo.950babc8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8d41d44.js",
+    "static/css/2.fb230578.chunk.css",
+    "static/js/2.6d71253e.chunk.js",
+    "static/css/main.814a4224.chunk.css",
+    "static/js/main.5c0c507f.chunk.js"
+  ]
+}
