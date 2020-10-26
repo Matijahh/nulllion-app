@@ -5,16 +5,6 @@ import Media from "react-media";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-/** Material UI Imports */
-import Typography from "@material-ui/core/Typography";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import CheckCircleOutline from "@material-ui/icons/CheckCircleOutline";
-import ArrowForward from "@material-ui/icons/ArrowForward";
-import Button from "@material-ui/core/Button";
-
 /** Images Imports */
 import img1 from "../images/carousel/10364.jpg";
 import img2 from "../images/carousel/25060.jpg";
@@ -72,159 +62,209 @@ const Home = () => {
                 <div className="col-md-6 health-paragraph">
                   {matches.small && (
                     <>
-                      <Typography variant="h6" className="title">
+                      <span className="title title-small">
                         Health Insurance
-                      </Typography>
-                      <Typography variant="body2" className="subtitle">
+                      </span>
+                      <p className="subtitle subtitle-small">
                         You can combine all the Landrick templates into a single
                         one, you can take a component from the Application theme
                         and use it in the Website.
-                      </Typography>
+                      </p>
+                      <ul className="list list-small">
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Digital Marketing
+                          Solutions for Tommorow
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Our Talented &
+                          Experienced Marketing Agency
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Create your own
+                          skin to match your brand
+                        </li>
+                      </ul>
+                      <button
+                        className="btn btn-small"
+                        onClick={noLinkFoundToast}
+                      >
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
                     </>
                   )}
                   {matches.medium && (
                     <>
-                      <Typography variant="h4" className="title">
+                      <span className="title title-medium">
                         Health Insurance
-                      </Typography>
-                      <Typography variant="subtitle2" className="subtitle">
+                      </span>
+                      <p className="subtitle subtitle-medium">
                         You can combine all the Landrick templates into a single
                         one, you can take a component from the Application theme
                         and use it in the Website.
-                      </Typography>
+                      </p>
+                      <ul className="list list-medium">
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Digital Marketing
+                          Solutions for Tommorow
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Our Talented &
+                          Experienced Marketing Agency
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Create your own
+                          skin to match your brand
+                        </li>
+                      </ul>
+                      <button
+                        className="btn btn-medium"
+                        onClick={noLinkFoundToast}
+                      >
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
                     </>
                   )}
                   {matches.large && (
                     <>
-                      <Typography variant="h2" className="title">
+                      <span className="title title-large">
                         Health Insurance
-                      </Typography>
-                      <Typography variant="h6" className="subtitle">
+                      </span>
+                      <p className="subtitle subtitle-large">
                         You can combine all the Landrick templates into a single
                         one, you can take a component from the Application theme
                         and use it in the Website.
-                      </Typography>
+                      </p>
+                      <ul className="list list-large">
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Digital Marketing
+                          Solutions for Tommorow
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Our Talented &
+                          Experienced Marketing Agency
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Create your own
+                          skin to match your brand
+                        </li>
+                      </ul>
+                      <button
+                        className="btn btn-large"
+                        onClick={noLinkFoundToast}
+                      >
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
                     </>
                   )}
-                  <List className="list">
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline></CheckCircleOutline>
-                      </ListItemIcon>
-                      <ListItemText
-                        primary="Digital Marketing Solutions for Tomorrow"
-                        className="list-text"
-                      />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline></CheckCircleOutline>
-                      </ListItemIcon>
-                      <ListItemText
-                        primary="Our Talented & Experienced Marketing Agency"
-                        className="list-text"
-                      />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline></CheckCircleOutline>
-                      </ListItemIcon>
-                      <ListItemText
-                        primary="Create your own skin to match your brand"
-                        className="list-text"
-                      />
-                    </ListItem>
-                  </List>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    endIcon={<ArrowForward />}
-                    className="btn"
-                    onClick={noLinkFoundToast}
-                  >
-                    Read More
-                  </Button>
                 </div>
               </div>
             </div>
 
-            <div className="container landing-container investment-plans">
+            <div className="landing-container investment-plans">
               <div className="row">
                 <div className="col-md-6 paragraph invest-paragraph">
                   {matches.small && (
                     <>
-                      <Typography variant="h6" className="title">
+                      <span className="title title-small">
                         Investment Plans
-                      </Typography>
-                      <Typography variant="body2" className="subtitle">
+                      </span>
+                      <p className="subtitle subtitle-small">
                         You can combine all the Landrick templates into a single
                         one, you can take a component from the Application theme
                         and use it in the Website.
-                      </Typography>
+                      </p>
+                      <ul className="list list-small">
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Digital Marketing
+                          Solutions for Tommorow
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Our Talented &
+                          Experienced Marketing Agency
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Create your own
+                          skin to match your brand
+                        </li>
+                      </ul>
+                      <button
+                        className="btn btn-small"
+                        onClick={noLinkFoundToast}
+                      >
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
                     </>
                   )}
                   {matches.medium && (
                     <>
-                      <Typography variant="h4" className="title">
+                      <span className="title title-medium">
                         Investment Plans
-                      </Typography>
-                      <Typography variant="subtitle2" className="subtitle">
+                      </span>
+                      <p className="subtitle subtitle-medium">
                         You can combine all the Landrick templates into a single
                         one, you can take a component from the Application theme
                         and use it in the Website.
-                      </Typography>
+                      </p>
+                      <ul className="list list-medium">
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Digital Marketing
+                          Solutions for Tommorow
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Our Talented &
+                          Experienced Marketing Agency
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Create your own
+                          skin to match your brand
+                        </li>
+                      </ul>
+                      <button
+                        className="btn btn-medium"
+                        onClick={noLinkFoundToast}
+                      >
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
                     </>
                   )}
                   {matches.large && (
                     <>
-                      <Typography variant="h2" className="title">
+                      <span className="title title-large">
                         Investment Plans
-                      </Typography>
-                      <Typography variant="h6" className="subtitle">
+                      </span>
+                      <p className="subtitle subtitle-large">
                         You can combine all the Landrick templates into a single
                         one, you can take a component from the Application theme
                         and use it in the Website.
-                      </Typography>
+                      </p>
+                      <ul className="list list-large">
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Digital Marketing
+                          Solutions for Tommorow
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Our Talented &
+                          Experienced Marketing Agency
+                        </li>
+                        <li className="list-text">
+                          <i class="far fa-check-circle"></i>Create your own
+                          skin to match your brand
+                        </li>
+                      </ul>
+                      <button
+                        className="btn btn-large"
+                        onClick={noLinkFoundToast}
+                      >
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
                     </>
                   )}
-                  <List className="list">
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline></CheckCircleOutline>
-                      </ListItemIcon>
-                      <ListItemText
-                        primary="Digital Marketing Solutions for Tomorrow"
-                        className="list-text"
-                      />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline></CheckCircleOutline>
-                      </ListItemIcon>
-                      <ListItemText
-                        primary="Our Talented & Experienced Marketing Agency"
-                        className="list-text"
-                      />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline></CheckCircleOutline>
-                      </ListItemIcon>
-                      <ListItemText
-                        primary="Create your own skin to match your brand"
-                        className="list-text"
-                      />
-                    </ListItem>
-                  </List>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    endIcon={<ArrowForward />}
-                    className="btn"
-                    onClick={noLinkFoundToast}
-                  >
-                    Read More
-                  </Button>
                 </div>
                 <div className="col-md-6">
                   <img src={imgInvest} />

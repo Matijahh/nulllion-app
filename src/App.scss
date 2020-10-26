@@ -76,48 +76,6 @@
   }
 }
 
-.nav-bar {
-  background: #000 !important;
-  box-shadow: none !important;
-
-  .logo-div {
-    flex-grow: 1;
-
-    .logo {
-      width: 150px;
-    }
-  }
-
-  .nav-links {
-    .nav-link {
-      text-decoration: none;
-      padding: 0 20px;
-      text-transform: uppercase;
-      color: #fff;
-      opacity: 0.3;
-      letter-spacing: 1px;
-      float: left;
-
-      &::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        background-color: #fff;
-        transition: width 0.3s;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
-    }
-  }
-
-  .active {
-    opacity: 1 !important;
-  }
-}
-
 /* Carousel styling */
 
 .carousel-container {
@@ -139,7 +97,7 @@
   }
 }
 
-/* Health Insurance Paragraph styling*/
+/* Paragraph styling*/
 
 .carousel-container {
   width: 100%;
@@ -150,35 +108,123 @@
   margin-top: 200px;
 }
 
+.title {
+  font-weight: bold;
+}
+
+.title-small {
+  font-size: 1.5em;
+}
+
+.title-medium {
+  font-size: 2em;
+}
+
+.title-large {
+  font-size: 3em;
+}
+
+.subtitle,
+.list-text {
+  color: grey;
+}
+
+.subtitle-small {
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+.subtitle-medium {
+  margin-top: 40px;
+  font-size: 1.2em;
+}
+
+.subtitle-large {
+  margin-top: 50px;
+  font-size: 1.5em;
+}
+
+.list {
+  list-style: none;
+}
+
+.list i {
+  margin-right: 10px;
+}
+
+.list-large {
+  margin: 50px 0;
+
+  .list-text {
+    margin: 30px 0;
+    font-size: 1.5em;
+  }
+}
+
+.list-medium {
+  margin: 40px 0;
+
+  .list-text {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+}
+
+.list-small {
+  margin: 30px 0;
+
+  .list-text {
+    margin: 20px 0;
+    font-size: 1em;
+  }
+}
+
+.btn {
+  background-color: #006bd6;
+  color: #fff;
+  padding: 5px 20px;
+  margin-bottom: 50px;
+}
+
+.btn:hover {
+  background-color: #0080ff;
+  color: #fff;
+}
+
+.btn i {
+  margin-left: 15px;
+}
+
+.btn-large {
+  font-size: 1.5em;
+}
+
+.btn-medium {
+  font-size: 1.2em;
+}
+
+.btn-small {
+  font-size: 1em;
+}
+
 .landing-container {
   img {
-    width: 400px;
+    width: 700px;
     padding: 0 100px;
   }
+}
 
-  .MuiListItemText-primary {
-    font-size: 0.9em;
-  }
+.investment-plans {
+  margin: 50px 0 100px 0;
+  padding-left: 100px;
+}
 
-  .title {
-    margin-bottom: 20px;
-  }
-
-  .subtitle,
-  .list-text {
-    color: grey;
-  }
-
-  .list {
-    margin: 15px 0;
-  }
-
-  .btn {
-    text-transform: initial;
-  }
-
-  .paragraph {
-    padding: 50px 0;
+@media (max-width: 1399px) {
+  .landing-container {
+    img {
+      width: 500px;
+      padding: 0 100px;
+    }
   }
 }
 
@@ -189,45 +235,17 @@
     text-align: center;
   }
 
+  .investment-plans {
+    margin: 70px 0 0 0;
+    padding: 50px;
+    text-align: center;
+  }
+
   .landing-container {
     img {
-      width: 200px;
-      padding: 0 50px 50px 50px;
+      width: 300px;
+      padding: 100px 0;
     }
-
-    .health-paragraph {
-      padding: 0px;
-    }
-
-    .paragraph {
-      padding: 0 50px;
-
-      .title {
-        margin-bottom: 0;
-      }
-
-      .list {
-        margin: 0 0;
-      }
-    }
-
-    .btn {
-      margin-bottom: 50px;
-    }
-  }
-}
-
-/* Investment Plans Paragraph styling*/
-
-.investment-plans {
-  margin: 50px 0 100px 0;
-  padding-left: 100px;
-}
-
-@media (max-width: 699px) {
-  .investment-plans {
-    padding-left: 0px;
-    text-align: center;
   }
 }
 
@@ -249,26 +267,51 @@
     color: #0080ff;
   }
 
-  .subtitle {
-    color: grey;
-    margin-top: 15px;
+  .bottom {
+    margin: 40px 0 60px 0;
   }
 
   .list-item {
-    padding: 0 5px;
-  }
-
-  .bottom {
-    margin: 40px 0 60px 0;
+    padding: 20px 0;
   }
 
   .list-title {
     font-weight: bold;
 
-    .icon {
+    i {
       margin-right: 10px;
       color: #0080ff;
     }
+  }
+
+  .list-subtitle {
+    color: grey;
+  }
+
+  .list-title-small {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .list-title-medium {
+    font-size: 1.4em;
+  }
+
+  .list-title-large {
+    font-size: 1.7em;
+  }
+
+  .list-subtitle-small {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .list-subtitle-medium {
+    font-size: 1.1em;
+  }
+
+  .list-subtitle-large {
+    font-size: 1.3em;
   }
 
   .about-us {
@@ -290,10 +333,6 @@
     .list-item {
       margin: 0 0 20px 0;
     }
-
-    .bottom {
-      margin: 0 0 20px 0;
-    }
   }
 }
 
@@ -308,6 +347,24 @@
     padding: 60px;
   }
 
+  .title-small {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .subtitle-small {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .title-medium {
+    font-size: 3em;
+  }
+
+  .title-large {
+    font-size: 4em;
+  }
+
   span {
     font-weight: bold;
     color: #0080ff;
@@ -318,14 +375,21 @@
     margin: 15px 0;
   }
 
-  .icon {
-    color: grey;
-    padding-top: 20px;
-  }
-
   .contact-detail {
     .title {
       font-weight: bold;
+    }
+
+    .title-small {
+      font-size: 1.7em;
+    }
+
+    .title-medium {
+      font-size: 2em;
+    }
+
+    .title-large {
+      font-size: 2.2em;
     }
 
     .subtitle {

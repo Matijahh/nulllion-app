@@ -19,185 +19,180 @@ const ContactUs = () => {
       >
         {(matches) => (
           <Fragment>
-            <div className="contact-us">
-              <div className="row">
-                <div className="col-md-6"></div>
-                <div className="col-md-6 paragraph">
-                  {matches.small && (
-                    <>
-                      <Typography variant="h5" className="title">
-                        Let's talk about your portfolio
-                      </Typography>
-                      <Typography variant="subtitle2" className="subtitle">
-                        Start working with <span>Landrick</span> that can
-                        provide everything you need to generate awareness, drive
-                        traffic, connect.
-                      </Typography>
-                    </>
-                  )}
-                  {matches.medium && (
-                    <>
-                      <Typography variant="h3" className="title">
-                        Let's talk about your portfolio
-                      </Typography>
-                      <Typography variant="subtitle1" className="subtitle">
-                        Start working with <span>Landrick</span> that can
-                        provide everything you need to generate awareness, drive
-                        traffic, connect.
-                      </Typography>
-                    </>
-                  )}
-                  {matches.large && (
-                    <>
-                      <Typography variant="h1" className="title">
-                        Let's talk about your portfolio
-                      </Typography>
-                      <Typography variant="h5" className="subtitle">
-                        Start working with <span>Landrick</span> that can
-                        provide everything you need to generate awareness, drive
-                        traffic, connect.
-                      </Typography>
-                    </>
-                  )}
-
+            {matches.small && (
+              <>
+                <div className="contact-us">
                   <div className="row">
-                    <div className="col-md-1">
-                      <MailIcon className="icon" />
-                    </div>
-                    <div className="col-md-11">
-                      <div className="contact-detail">
-                        {matches.small && (
-                          <>
-                            <Typography variant="subtitle1" className="title">
-                              Email
-                            </Typography>
-                            <Typography
-                              variant="subtitle2"
-                              className="subtitle"
-                            >
-                              contact@example.com
-                            </Typography>
-                          </>
-                        )}
-                        {matches.medium && (
-                          <>
-                            <Typography variant="h6" className="title">
-                              Email
-                            </Typography>
-                            <Typography
-                              variant="subtitle1"
-                              className="subtitle"
-                            >
-                              contact@example.com
-                            </Typography>
-                          </>
-                        )}
-                        {matches.large && (
-                          <>
-                            <Typography variant="h3" className="title">
-                              Email
-                            </Typography>
-                            <Typography variant="h5" className="subtitle">
-                              contact@example.com
-                            </Typography>
-                          </>
-                        )}
+                    <div className="col-md-6"></div>
+                    <div className="col-md-6 paragraph">
+                      <span className="title title-small">
+                        Let's talk about your portfolio
+                      </span>
+                      <div className="subtitle subtitle-small">
+                        Start working with <span>Landrick</span> that can
+                        provide everything you need to generate awareness, drive
+                        traffic, connect.
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-1">
-                      <PhoneIcon className="icon" />
-                    </div>
-                    <div className="col-md-11">
-                      <div className="contact-detail">
-                        {matches.small && (
-                          <>
-                            <Typography variant="subtitle1" className="title">
-                              Phone
-                            </Typography>
-                            <Typography
-                              variant="subtitle2"
-                              className="subtitle"
-                            >
-                              +152 534-468-854
-                            </Typography>
-                          </>
-                        )}
-                        {matches.medium && (
-                          <>
-                            <Typography variant="h6" className="title">
-                              Phone
-                            </Typography>
-                            <Typography
-                              variant="subtitle1"
-                              className="subtitle"
-                            >
-                              +152 534-468-854
-                            </Typography>
-                          </>
-                        )}
-                        {matches.large && (
-                          <>
-                            <Typography variant="h3" className="title">
-                              Phone
-                            </Typography>
-                            <Typography variant="h5" className="subtitle">
-                              +152 534-468-854
-                            </Typography>
-                          </>
-                        )}
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-small">Email</div>
+                            <div className="subtitle subtitle-small">
+                              contact@example.com
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-1">
-                      <LocationOnIcon className="icon" />
-                    </div>
-                    <div className="col-md-11">
-                      <div className="contact-detail">
-                        {matches.small && (
-                          <>
-                            <Typography variant="subtitle1" className="title">
-                              Location
-                            </Typography>
-                            <Typography
-                              variant="subtitle2"
-                              className="subtitle"
-                            >
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-small">Phone</div>
+                            <div className="subtitle subtitle-small">
+                              +152 534-468-854
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-small">Location</div>
+                            <div className="subtitle subtitle-small">
                               View on Google Map
-                            </Typography>
-                          </>
-                        )}
-                        {matches.medium && (
-                          <>
-                            <Typography variant="h6" className="title">
-                              Location
-                            </Typography>
-                            <Typography
-                              variant="subtitle1"
-                              className="subtitle"
-                            >
-                              View on Google Map
-                            </Typography>
-                          </>
-                        )}
-                        {matches.large && (
-                          <>
-                            <Typography variant="h3" className="title">
-                              Location
-                            </Typography>
-                            <Typography variant="h5" className="subtitle">
-                              View on Google Map
-                            </Typography>
-                          </>
-                        )}
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </>
+            )}
+            {matches.medium && (
+              <>
+                <div className="contact-us">
+                  <div className="row">
+                    <div className="col-md-6"></div>
+                    <div className="col-md-6 paragraph">
+                      <span className="title title-medium">
+                        Let's talk about your portfolio
+                      </span>
+                      <div className="subtitle subtitle-medium">
+                        Start working with <span>Landrick</span> that can
+                        provide everything you need to generate awareness, drive
+                        traffic, connect.
+                      </div>
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-medium">Email</div>
+                            <div className="subtitle subtitle-medium">
+                              contact@example.com
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-medium">Phone</div>
+                            <div className="subtitle subtitle-medium">
+                              +152 534-468-854
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-medium">Location</div>
+                            <div className="subtitle subtitle-medium">
+                              View on Google Map
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+            {matches.large && (
+              <>
+                <div className="contact-us">
+                  <div className="row">
+                    <div className="col-md-6"></div>
+                    <div className="col-md-6 paragraph">
+                      <span className="title title-large">
+                        Let's talk about your portfolio
+                      </span>
+                      <div className="subtitle subtitle-large">
+                        Start working with <span>Landrick</span> that can
+                        provide everything you need to generate awareness, drive
+                        traffic, connect.
+                      </div>
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-large">Email</div>
+                            <div className="subtitle subtitle-large">
+                              contact@example.com
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-large">Phone</div>
+                            <div className="subtitle subtitle-large">
+                              +152 534-468-854
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-1">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div className="col-md-11">
+                          <div className="contact-detail">
+                            <div className="title title-large">Location</div>
+                            <div className="subtitle subtitle-large">
+                              View on Google Map
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </Fragment>
         )}
       </Media>
