@@ -6,7 +6,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 /** Material UI Imports */
-import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -66,46 +65,46 @@ const Home = () => {
             </Carousel>
 
             <div className="landing-container health-insurance">
-              <Grid container>
-                <Grid item md={6}>
+              <div className="row">
+                <div className="col-md-6">
                   <img src={imgHealth} />
-                </Grid>
-                <Grid item md={6} className="health-paragraph">
+                </div>
+                <div className="col-md-6 health-paragraph">
                   {matches.small && (
-                    <Typography variant="h6" className="title">
-                      Health Insurance
-                    </Typography>
+                    <>
+                      <Typography variant="h6" className="title">
+                        Health Insurance
+                      </Typography>
+                      <Typography variant="body2" className="subtitle">
+                        You can combine all the Landrick templates into a single
+                        one, you can take a component from the Application theme
+                        and use it in the Website.
+                      </Typography>
+                    </>
                   )}
                   {matches.medium && (
-                    <Typography variant="h4" className="title">
-                      Health Insurance
-                    </Typography>
+                    <>
+                      <Typography variant="h4" className="title">
+                        Health Insurance
+                      </Typography>
+                      <Typography variant="subtitle2" className="subtitle">
+                        You can combine all the Landrick templates into a single
+                        one, you can take a component from the Application theme
+                        and use it in the Website.
+                      </Typography>
+                    </>
                   )}
                   {matches.large && (
-                    <Typography variant="h2" className="title">
-                      Health Insurance
-                    </Typography>
-                  )}
-                  {matches.small && (
-                    <Typography variant="body2" className="subtitle">
-                      You can combine all the Landrick templates into a single
-                      one, you can take a component from the Application theme
-                      and use it in the Website.
-                    </Typography>
-                  )}
-                  {matches.medium && (
-                    <Typography variant="subtitle2" className="subtitle">
-                      You can combine all the Landrick templates into a single
-                      one, you can take a component from the Application theme
-                      and use it in the Website.
-                    </Typography>
-                  )}
-                  {matches.large && (
-                    <Typography variant="h6" className="subtitle">
-                      You can combine all the Landrick templates into a single
-                      one, you can take a component from the Application theme
-                      and use it in the Website.
-                    </Typography>
+                    <>
+                      <Typography variant="h2" className="title">
+                        Health Insurance
+                      </Typography>
+                      <Typography variant="h6" className="subtitle">
+                        You can combine all the Landrick templates into a single
+                        one, you can take a component from the Application theme
+                        and use it in the Website.
+                      </Typography>
+                    </>
                   )}
                   <List className="list">
                     <ListItem>
@@ -145,48 +144,48 @@ const Home = () => {
                   >
                     Read More
                   </Button>
-                </Grid>
-              </Grid>
+                </div>
+              </div>
             </div>
 
-            <div className="landing-container investment-plans">
-              <Grid container>
-                <Grid item md={6} className="paragraph invest-paragraph">
+            <div className="container landing-container investment-plans">
+              <div className="row">
+                <div className="col-md-6 paragraph invest-paragraph">
                   {matches.small && (
-                    <Typography variant="h6" className="title">
-                      Investment Plans
-                    </Typography>
+                    <>
+                      <Typography variant="h6" className="title">
+                        Investment Plans
+                      </Typography>
+                      <Typography variant="body2" className="subtitle">
+                        You can combine all the Landrick templates into a single
+                        one, you can take a component from the Application theme
+                        and use it in the Website.
+                      </Typography>
+                    </>
                   )}
                   {matches.medium && (
-                    <Typography variant="h4" className="title">
-                      Investment Plans
-                    </Typography>
+                    <>
+                      <Typography variant="h4" className="title">
+                        Investment Plans
+                      </Typography>
+                      <Typography variant="subtitle2" className="subtitle">
+                        You can combine all the Landrick templates into a single
+                        one, you can take a component from the Application theme
+                        and use it in the Website.
+                      </Typography>
+                    </>
                   )}
                   {matches.large && (
-                    <Typography variant="h2" className="title">
-                      Investment Plans
-                    </Typography>
-                  )}
-                  {matches.small && (
-                    <Typography variant="body2" className="subtitle">
-                      You can combine all the Landrick templates into a single
-                      one, you can take a component from the Application theme
-                      and use it in the Website.
-                    </Typography>
-                  )}
-                  {matches.medium && (
-                    <Typography variant="subtitle2" className="subtitle">
-                      You can combine all the Landrick templates into a single
-                      one, you can take a component from the Application theme
-                      and use it in the Website.
-                    </Typography>
-                  )}
-                  {matches.large && (
-                    <Typography variant="h6" className="subtitle">
-                      You can combine all the Landrick templates into a single
-                      one, you can take a component from the Application theme
-                      and use it in the Website.
-                    </Typography>
+                    <>
+                      <Typography variant="h2" className="title">
+                        Investment Plans
+                      </Typography>
+                      <Typography variant="h6" className="subtitle">
+                        You can combine all the Landrick templates into a single
+                        one, you can take a component from the Application theme
+                        and use it in the Website.
+                      </Typography>
+                    </>
                   )}
                   <List className="list">
                     <ListItem>
@@ -226,11 +225,11 @@ const Home = () => {
                   >
                     Read More
                   </Button>
-                </Grid>
-                <Grid item md={6}>
+                </div>
+                <div className="col-md-6">
                   <img src={imgInvest} />
-                </Grid>
-              </Grid>
+                </div>
+              </div>
             </div>
           </Fragment>
         )}

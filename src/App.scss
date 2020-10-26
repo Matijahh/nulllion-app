@@ -1,7 +1,7 @@
 /* Nav bar styling */
 
 .nav-bar {
-  background: #333 !important;
+  background: #000 !important;
   box-shadow: none !important;
 
   .logo-div {
@@ -172,7 +172,7 @@
 
 /* About Us Page styling */
 
-.container {
+.about-container {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -217,7 +217,7 @@
 }
 
 @media (max-width: 699px) {
-  .container {
+  .about-container {
     .about-us {
       padding: 50px;
     }
