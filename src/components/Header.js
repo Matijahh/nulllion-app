@@ -59,93 +59,92 @@ const Header = (props) => {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" className="nav-bar">
-        <Toolbar>
-          <div className="logo-div">
-            <img src={Logo} alt="" className="logo" />
-          </div>
-          <div className="select-lang">
-            <FormControl variant="outlined" className="form-control white">
-              <InputLabel id="demo-simple-select-outlined" className="white">
-                LANG
-              </InputLabel>
-              <Select
-                id="demo-simple-select-outlined"
-                value={lang}
-                onChange={handleLangChange}
-                label="Language"
-                className="select white"
+    <div className="navbar">
+      <nav>
+        <img src={Logo} alt="" />
+        <div>
+          {isMobile ? (
+            <>
+              <IconButton
+                edge="start"
+                className={classes.menuButton}
+                color="inherit"
+                aria-label="menu"
+                onClick={handleMenu}
               >
-                <MenuItem value="en" className="white">
-                  <em>ENG</em>
-                </MenuItem>
-                <MenuItem value="fr" className="white">
-                  FRA
-                </MenuItem>
-                <MenuItem value="sr" className="white">
-                  SRB
-                </MenuItem>
-                <MenuItem value="jp" className="white">
-                  JPN
-                </MenuItem>
-              </Select>
-            </FormControl>
-          </div>
-          <div>
-            {isMobile ? (
-              <>
-                <IconButton
-                  edge="start"
-                  className={classes.menuButton}
-                  color="inherit"
-                  aria-label="menu"
-                  onClick={handleMenu}
-                >
-                  <MenuIcon />
-                </IconButton>
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  open={open}
-                  onClose={() => setAnchorEl(null)}
-                >
-                  <MenuItem onClick={() => handleMenuClick("/")}>
-                    {t("home")}
-                  </MenuItem>
-                  <MenuItem onClick={() => handleMenuClick("/about")}>
-                    {t("about")}
-                  </MenuItem>
-                  <MenuItem onClick={() => handleMenuClick("/contact")}>
-                    {t("contact")}
-                  </MenuItem>
-                </Menu>
-              </>
-            ) : (
-              <div className="nav-links">
-                <NavLink to="/" exact className="nav-link">
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={open}
+                onClose={() => setAnchorEl(null)}
+              >
+                <MenuItem onClick={() => handleMenuClick("/")}>
                   {t("home")}
-                </NavLink>
-                <NavLink to="/about" className="nav-link">
+                </MenuItem>
+                <MenuItem onClick={() => handleMenuClick("/about")}>
                   {t("about")}
-                </NavLink>
-                <NavLink to="/contact" className="nav-link">
+                </MenuItem>
+                <MenuItem onClick={() => handleMenuClick("/contact")}>
                   {t("contact")}
-                </NavLink>
+                </MenuItem>
+              </Menu>
+            </>
+          ) : (
+            <div className="nav-links">
+              <div className="select-lang">
+                <FormControl variant="outlined" className="form-control white">
+                  <InputLabel
+                    id="demo-simple-select-outlined"
+                    className="white"
+                  >
+                    LANG
+                  </InputLabel>
+                  <Select
+                    id="demo-simple-select-outlined"
+                    value={lang}
+                    onChange={handleLangChange}
+                    label="Language"
+                    className="select white"
+                  >
+                    <MenuItem value="en" className="white">
+                      <em>ENG</em>
+                    </MenuItem>
+                    <MenuItem value="fr" className="white">
+                      FRA
+                    </MenuItem>
+                    <MenuItem value="sr" className="white">
+                      SRB
+                    </MenuItem>
+                    <MenuItem value="jp" className="white">
+                      JPN
+                    </MenuItem>
+                  </Select>
+                </FormControl>
               </div>
-            )}
-          </div>
-        </Toolbar>
-      </AppBar>
+              <NavLink to="/" exact className="nav-link">
+                {t("home")}
+              </NavLink>
+              <NavLink to="/about" className="nav-link">
+                {t("about")}
+              </NavLink>
+              <NavLink to="/contact" className="nav-link">
+                {t("contact")}
+              </NavLink>
+            </div>
+          )}
+        </div>
+      </nav>
     </div>
   );
 };
