@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nulllion-app/precache-manifest.42ee34f88706f19cd37b4071b4dfe421.js"
+  "/nulllion-app/precache-manifest.7fe6e38f51ad1bbc0eed9f70238dc7b6.js"
 );
 
 self.addEventListener('message', (event) => {
