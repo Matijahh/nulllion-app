@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 
-/** Material UI Imports */
-import MenuItem from "@material-ui/core/MenuItem";
-import Select from "@material-ui/core/Select";
-import InputLabel from "@material-ui/core/InputLabel";
-import FormControl from "@material-ui/core/FormControl";
-
 import { useTranslation } from "react-i18next";
 
 import { NavLink, withRouter } from "react-router-dom";
@@ -40,33 +34,16 @@ const Header = () => {
         </a>
 
         <div className={clicked ? "nav-links nav-active" : "nav-links"}>
-          <div className="select-lang">
-            <FormControl variant="outlined" className="form-control white">
-              <InputLabel id="demo-simple-select-outlined" className="white">
-                LANG
-              </InputLabel>
-              <Select
-                id="demo-simple-select-outlined"
-                value={lang}
-                onChange={handleLangChange}
-                label="Language"
-                className="select white"
-              >
-                <MenuItem value="en" className="white">
-                  <em>ENG</em>
-                </MenuItem>
-                <MenuItem value="fr" className="white">
-                  FRA
-                </MenuItem>
-                <MenuItem value="sr" className="white">
-                  SRB
-                </MenuItem>
-                <MenuItem value="jp" className="white">
-                  JPN
-                </MenuItem>
-              </Select>
-            </FormControl>
+          <div className="select-box">
+            <select value={lang} onChange={handleLangChange}>
+              <option value="">LANG</option>
+              <option value="en">ENG</option>
+              <option value="sr">SRB</option>
+              <option value="fr">FRA</option>
+              <option value="jp">JPN</option>
+            </select>
           </div>
+
           <NavLink
             to="/"
             exact

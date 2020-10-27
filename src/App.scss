@@ -37,18 +37,34 @@
       display: flex;
       align-items: center;
 
-      .select-lang {
-        .form-control {
-          opacity: 0.3;
-          min-width: 100px;
-          margin: 0 10px;
+      .select-box {
+        width: 100px;
+        position: relative;
+        margin-right: 20px;
+
+        select {
+          height: 40px;
+          padding: 10px 15px;
+          line-height: 18px;
+          font-size: 16px;
+          font-weight: bold;
+          background-color: #000;
+          color: #fff;
+          width: 100%;
+          border: 2px solid #fff;
+          -webkit-appearance: none;
+          appearance: none;
         }
 
-        .white,
-        .MuiSvgIcon-root,
-        .PrivateNotchedOutline-root-4 {
-          color: #fff !important;
-          border-color: #fff !important;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 8px;
+          top: 50%;
+          margin-top: -4px;
+          border-top: 8px solid #fff;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
         }
       }
 
