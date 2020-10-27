@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6e59349bac1830d5fc70f6cd2b3871a",
+    "revision": "f0e0e8629c0c1d4a319153c3e02299be",
     "url": "/nulllion-app/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nulllion-app/static/css/2.fb230578.chunk.css"
   },
   {
-    "revision": "7303796563ff727d866a",
-    "url": "/nulllion-app/static/css/main.e891c2d1.chunk.css"
+    "revision": "77fc6b137017f467aa0d",
+    "url": "/nulllion-app/static/css/main.cf04076b.chunk.css"
   },
   {
     "revision": "e1d54c7cd8d59bccde99",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nulllion-app/static/js/2.afd01340.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7303796563ff727d866a",
+    "revision": "77fc6b137017f467aa0d",
     "url": "/nulllion-app/static/js/main.52d590ef.chunk.js"
   },
   {
