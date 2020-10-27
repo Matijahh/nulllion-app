@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/nulllion-app/static/css/main.4e1bc388.chunk.css",
-    "main.js": "/nulllion-app/static/js/main.5ab7c310.chunk.js",
-    "main.js.map": "/nulllion-app/static/js/main.5ab7c310.chunk.js.map",
+    "main.css": "/nulllion-app/static/css/main.864efc57.chunk.css",
+    "main.js": "/nulllion-app/static/js/main.4c5088e2.chunk.js",
+    "main.js.map": "/nulllion-app/static/js/main.4c5088e2.chunk.js.map",
     "runtime-main.js": "/nulllion-app/static/js/runtime-main.f8d41d44.js",
     "runtime-main.js.map": "/nulllion-app/static/js/runtime-main.f8d41d44.js.map",
     "static/css/2.fb230578.chunk.css": "/nulllion-app/static/css/2.fb230578.chunk.css",
-    "static/js/2.eae06e11.chunk.js": "/nulllion-app/static/js/2.eae06e11.chunk.js",
-    "static/js/2.eae06e11.chunk.js.map": "/nulllion-app/static/js/2.eae06e11.chunk.js.map",
+    "static/js/2.8591cd13.chunk.js": "/nulllion-app/static/js/2.8591cd13.chunk.js",
+    "static/js/2.8591cd13.chunk.js.map": "/nulllion-app/static/js/2.8591cd13.chunk.js.map",
     "index.html": "/nulllion-app/index.html",
-    "precache-manifest.7fe6e38f51ad1bbc0eed9f70238dc7b6.js": "/nulllion-app/precache-manifest.7fe6e38f51ad1bbc0eed9f70238dc7b6.js",
+    "precache-manifest.2063f0d4175d30a961f23ad519e0cc68.js": "/nulllion-app/precache-manifest.2063f0d4175d30a961f23ad519e0cc68.js",
     "service-worker.js": "/nulllion-app/service-worker.js",
     "static/css/2.fb230578.chunk.css.map": "/nulllion-app/static/css/2.fb230578.chunk.css.map",
-    "static/css/main.4e1bc388.chunk.css.map": "/nulllion-app/static/css/main.4e1bc388.chunk.css.map",
-    "static/js/2.eae06e11.chunk.js.LICENSE.txt": "/nulllion-app/static/js/2.eae06e11.chunk.js.LICENSE.txt",
+    "static/css/main.864efc57.chunk.css.map": "/nulllion-app/static/css/main.864efc57.chunk.css.map",
+    "static/js/2.8591cd13.chunk.js.LICENSE.txt": "/nulllion-app/static/js/2.8591cd13.chunk.js.LICENSE.txt",
     "static/media/10364.jpg": "/nulllion-app/static/media/10364.a9a110df.jpg",
     "static/media/195548-OY9OIN-908.jpg": "/nulllion-app/static/media/195548-OY9OIN-908.4898f1f8.jpg",
     "static/media/25060.jpg": "/nulllion-app/static/media/25060.63790588.jpg",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.f8d41d44.js",
     "static/css/2.fb230578.chunk.css",
-    "static/js/2.eae06e11.chunk.js",
-    "static/css/main.4e1bc388.chunk.css",
-    "static/js/main.5ab7c310.chunk.js"
+    "static/js/2.8591cd13.chunk.js",
+    "static/css/main.864efc57.chunk.css",
+    "static/js/main.4c5088e2.chunk.js"
   ]
 }
