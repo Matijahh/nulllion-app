@@ -1,12 +1,6 @@
 import React, { Fragment } from "react";
 import Media from "react-media";
 
-/** Material UI Imports */
-import Typography from "@material-ui/core/Typography";
-import MailIcon from "@material-ui/icons/Mail";
-import PhoneIcon from "@material-ui/icons/Phone";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
-
 const ContactUs = () => {
   return (
     <div>
@@ -35,7 +29,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-envelope"></i>
+                          <i class="fas fa-envelope i-small"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -48,7 +42,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-phone-alt"></i>
+                          <i class="fas fa-phone-alt i-small"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -61,7 +55,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-map-marker-alt"></i>
+                          <i class="fas fa-map-marker-alt i-small"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -93,7 +87,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-envelope"></i>
+                          <i class="fas fa-envelope i-medium"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -106,7 +100,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-phone-alt"></i>
+                          <i class="fas fa-phone-alt i-medium"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -119,7 +113,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-map-marker-alt"></i>
+                          <i class="fas fa-map-marker-alt i-medium"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -151,7 +145,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-envelope"></i>
+                          <i class="fas fa-envelope i-large"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -164,7 +158,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-phone-alt"></i>
+                          <i class="fas fa-phone-alt i-large"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">
@@ -177,7 +171,7 @@ const ContactUs = () => {
                       </div>
                       <div className="row">
                         <div className="col-md-1">
-                          <i class="fas fa-map-marker-alt"></i>
+                          <i class="fas fa-map-marker-alt i-large"></i>
                         </div>
                         <div className="col-md-11">
                           <div className="contact-detail">

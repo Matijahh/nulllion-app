@@ -17,6 +17,19 @@
       left: 5%;
     }
 
+    .toggle-button {
+      position: absolute;
+      top: 60px;
+      right: 60px;
+      color: #fff;
+      display: none;
+      text-decoration: none;
+
+      i {
+        font-size: 2em;
+      }
+    }
+
     .nav-links {
       float: right;
       margin-right: 25px;
@@ -72,6 +85,43 @@
 
     .active {
       opacity: 1 !important;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  nav {
+    height: 150px;
+
+    .toggle-button {
+      display: flex !important;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 150px);
+      position: absolute;
+      justify-content: center;
+      top: 145px;
+      left: -100%;
+      opacity: 1;
+      transition: left 0.5 ease;
+
+      .nav-link {
+        padding: 30px 0;
+        font-size: 1.7em !important;
+        font-weight: bold;
+      }
+    }
+
+    .nav-active {
+      background-color: #000;
+      left: 0;
+      opacity: 1;
+      transition: left 0.5 ease;
+      z-index: 1000;
     }
   }
 }
@@ -208,23 +258,30 @@
 }
 
 .landing-container {
+  padding: 100px;
+
   img {
-    width: 700px;
+    width: 650px;
     padding: 0 100px;
   }
 }
 
 .investment-plans {
-  margin: 50px 0 100px 0;
-  padding-left: 100px;
+  margin: 0 100px;
 }
 
 @media (max-width: 1399px) {
   .landing-container {
+    padding: 60px;
+
     img {
-      width: 500px;
+      width: 550px;
       padding: 0 100px;
     }
+  }
+
+  .investment-plans {
+    margin: 0 70px;
   }
 }
 
@@ -267,12 +324,24 @@
     color: #0080ff;
   }
 
+  .title {
+    color: #000 !important;
+  }
+
+  .subtitle {
+    padding: 0 100px;
+  }
+
+  .subtitle-small {
+    padding: 0;
+  }
+
   .bottom {
     margin: 40px 0 60px 0;
   }
 
   .list-item {
-    padding: 20px 0;
+    padding: 20px;
   }
 
   .list-title {
@@ -347,14 +416,35 @@
     padding: 60px;
   }
 
+  .fas {
+    color: #000;
+  }
+
+  .i-small {
+    display: none;
+  }
+
+  .i-medium {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .i-large {
+    font-size: 2em;
+    padding: 10px;
+  }
+
+  .title {
+    color: #000;
+    font-weight: normal;
+  }
+
   .title-small {
     font-size: 2em;
-    text-align: center;
   }
 
   .subtitle-small {
     font-size: 1.3em;
-    text-align: center;
   }
 
   .title-medium {
@@ -373,11 +463,14 @@
   .subtitle {
     color: grey;
     margin: 15px 0;
+    margin-bottom: 30px;
   }
 
   .contact-detail {
+    margin-left: 20px;
+
     .title {
-      font-weight: bold;
+      font-weight: 500;
     }
 
     .title-small {
@@ -395,6 +488,16 @@
     .subtitle {
       color: grey;
       margin: 0 0 15px 0;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .contact-us {
+    text-align: center;
+
+    .paragraph {
+      margin-top: 100px;
     }
   }
 }
