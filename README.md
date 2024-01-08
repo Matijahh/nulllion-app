@@ -18,6 +18,7 @@ This is a sample application made for demonstration purpose only. The app was ma
 - Topbar with basic navigation to each section
 - Static info separated within several sections
 - Modern design
+- Ability to change languages
 
 ## Usage
 
